@@ -18,20 +18,11 @@ from tobrot.get_cfg import get_config
 
 class Config:
     # get a token from @BotFather
-    TG_BOT_TOKEN = get_config("TG_BOT_TOKEN", should_prompt=True)
-    # The Telegram API things
-    APP_ID = int(get_config("APP_ID", should_prompt=True))
-    API_HASH = get_config("API_HASH", should_prompt=True)
-    # Get these values from my.telegram.org
-    # array to store the channel ID who are authorized to use the bot
-    AUTH_CHANNEL = set(
-        int(x) for x in get_config(
-            "AUTH_CHANNEL",
-            should_prompt=True
-        ).split()
-    )
-    # the download location, where the HTTP Server runs
-    DOWNLOAD_LOCATION = get_config("DOWNLOAD_LOCATION", "./DOWNLOADS")
+    TG_BOT_TOKEN = "1473788607:AAHlSlT3KV-3QKUbtSWzaoAZQaadwA09QsI"
+    APP_ID = 2026775
+    API_HASH = 08c81dcff42883b0a106a3c340a4d5f5
+    AUTH_CHANNEL = -1001214813572
+    DOWNLOAD_LOCATION = "./DOWNLOADS"
     # Telegram maximum file upload size
     MAX_FILE_SIZE = int(get_config("MAX_FILE_SIZE", 50000000))
     TG_MAX_FILE_SIZE = int(get_config("TG_MAX_FILE_SIZE", 2097152000))
